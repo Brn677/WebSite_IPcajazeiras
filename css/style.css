@@ -795,6 +795,117 @@ p {
     margin: 50% auto 0 auto !important;
 }
 }
+
+/*** Pág Videos ***/
+.videos-text{
+    color: #ebe0e0 !important;
+    font-weight: 700;
+}
+.videos-text p{
+  color: var(--light);
+  margin: 15px;
+  text-align: left;
+  line-height: 1.8;
+}
+.videos-item {
+    position: relative;
+    margin: 65px 0 25px 0;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.videos-item .videos-img {
+    position: absolute;
+    padding: 12px;
+    width: 330px;
+    height: 330px;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    z-index: 2;
+}
+.videos-item img{
+    border-radius: 5px;
+}
+.videos-item .videos-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.videos-item .videos-title {
+    position: absolute;
+    padding: 65px 30px 25px 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #8f9779;
+    transition: .5s;
+}
+
+.videos-item:hover .videos-title {
+    top: -100%;
+}
+
+.videos-item .videos-text {
+    position: absolute;
+    overflow: hidden;
+    padding: 65px 30px 25px 30px;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(2, 36, 91, .7);
+    transition: .5s;
+}
+
+.videos-item:hover .videos-text {
+    top: 0;
+}
+
+
+.videos-item:hover .videos-text::before {
+    top: -55px;
+}
+
+.videos-item .btn {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border-radius: 2px;
+    z-index: 2;
+}   
+
+.videos-item .btn:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+
 /*** Agenda Semanal ***/
 .agenda-carousel::before {
     position: absolute;
