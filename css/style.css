@@ -590,7 +590,7 @@ p {
         color: #ebe0e0;
         font-size: 15px;
         font-weight: 500;
-        line-height: 1.8
+        line-height: 1.8;
 }
 .pageLideranca-pp{
     text-align: left;
@@ -598,7 +598,7 @@ p {
     color: #7c7575;
     font-size: 15px;
     font-weight: 500;
-    line-height: 1.8
+    line-height: 1.8;
 }
 
 .pageLideranca-img {
@@ -902,13 +902,24 @@ p {
     background: url(../img/bg_instuticional-removebg-preview.png) no-repeat !important;
     background-size: cover !important;
 }
-.service-item {
+
+.devocional-text{
+    color: #ebe0e0 !important;
+    font-weight: 700;
+}
+.devocional-text p{
+  color: var(--light);
+  margin: 15px;
+  text-align: left;
+  line-height: 1.8;
+}
+.devocional-item {
     position: relative;
     margin: 65px 0 25px 0;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 
-.service-item .service-img {
+.devocional-item .devocional-img {
     position: absolute;
     padding: 12px;
     width: 330px;
@@ -920,10 +931,10 @@ p {
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }
-.service-item img{
+.devocional-item img{
     border-radius: 5px;
 }
-.service-item .service-detail {
+.devocional-item .devocional-detail {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -933,7 +944,7 @@ p {
     z-index: 1;
 }
 
-.service-item .service-title {
+.devocional-item .devocional-title {
     position: absolute;
     padding: 65px 30px 25px 30px;
     width: 100%;
@@ -949,11 +960,11 @@ p {
     transition: .5s;
 }
 
-.service-item:hover .service-title {
+.devocional-item:hover .devocional-title {
     top: -100%;
 }
 
-.service-item .service-text {
+.devocional-item .devocional-text {
     position: absolute;
     overflow: hidden;
     padding: 65px 30px 25px 30px;
@@ -969,24 +980,20 @@ p {
     transition: .5s;
     
 }
-.service-text p{
-    color: var(--light);
-    font-weight: 700;
-
-}
 
 
 
-.service-item:hover .service-text {
+
+.devocional-item:hover .devocional-text {
     top: 0;
 }
 
 
-.service-item:hover .service-text::before {
+.devocional-item:hover .devocional-text::before {
     top: -55px;
 }
 
-.service-item .btn {
+.devocional-item .btn {
     position: absolute;
     width: 130px;
     height: 50px;
@@ -1002,9 +1009,8 @@ p {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     border-radius: 2px;
     z-index: 2;
-}
-
-.service-item .btn:hover {
+}    
+.devocional-item .btn:hover {
     color: #FFFFFF;
     background: var(--primary);
 }
