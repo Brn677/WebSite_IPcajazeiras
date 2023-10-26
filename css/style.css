@@ -1172,7 +1172,9 @@ p {
     background-color: #121212 !important;
     color: #B0B9AE;
 }
-
+.footer-bg{
+    background: url('../img/Perfil_igreja.png') no-repeat center;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
