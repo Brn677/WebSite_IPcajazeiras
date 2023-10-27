@@ -408,9 +408,8 @@ p {
 }
 
 .page-header-video{
-    background: url(../img/_header-video.png) center no-repeat;
+    background: url('../img/capa-videos.png') center no-repeat;
     background-size: cover;
-    filter: brightness(91%);
 }
 .page-header-documentos{
     background: url(../img/bg-documentos.png) center no-repeat;
